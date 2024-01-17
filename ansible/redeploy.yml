@@ -4,15 +4,15 @@
   tasks:
     - name: "Pull changes"
       ansible.builtin.git:
-        repo: 'git@github.com:MadhavShroff/makeitaifor-me-server.git' # SSH URL
-        dest: /home/ubuntu/makeitaifor-me-server
+        repo: 'git@github.com:MadhavShroff/manim-server.git' # SSH URL
+        dest: /home/ubuntu/manim-server
         key_file: /home/ubuntu/.ssh/id_rsa # Path to private key
         accept_hostkey: true
         force: yes
       become: yes
 
     - name: "Run redeploy script"
-      ansible.builtin.command: '/bin/bash /home/ubuntu/makeitaifor-me-server/redeploy.sh'
+      ansible.builtin.command: '/bin/bash /home/ubuntu/manim-server/redeploy.sh'
       become: yes
       register: redeploy_result  # Register the output to a variable
 
