@@ -1,0 +1,22 @@
+{
+  "name": "manim-server",
+  "version": "1.0.0",
+  "description": "Server to generate math explainer videos for MakeItAIFor.Me Chat Interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadhavShroff/manim-server.git"
+  },
+  "author": "Madhav Shroff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MadhavShroff/manim-server/issues"
+  },
+  "homepage": "https://github.com/MadhavShroff/manim-server#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
