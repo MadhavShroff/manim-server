@@ -6,7 +6,7 @@
       ansible.builtin.git:
         repo: 'git@github.com:MadhavShroff/manim-server.git' # SSH URL
         dest: /home/ubuntu/manim-server
-        key_file: /home/ubuntu/.ssh/id_rsa # Path to private key
+        key_file: /home/ubuntu/.ssh/id_rsa.pub # Path to private key
         accept_hostkey: true
         force: yes
       become: yes
